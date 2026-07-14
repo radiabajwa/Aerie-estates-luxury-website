@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aerie Estates — Private Collection</title>
+<meta name="description" content="Aerie Estates. A private collection of the world's most consequential addresses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom cursor dot -->
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- Grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">AERIE</span>
+      <span class="logo-sub">ESTATES</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#collection"><span class="nav-index">01</span>Collection</a>
+      <a href="#philosophy"><span class="nav-index">02</span>Philosophy</a>
+      <a href="#services"><span class="nav-index">03</span>Services</a>
+      <a href="#testimonials"><span class="nav-index">04</span>Regard</a>
+      <a href="#contact"><span class="nav-index">05</span>Access</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <a href="#contact" class="header-cta">Request Private Access</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+
+  <svg class="hero-filter-def" aria-hidden="true">
+    <filter id="heroGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </svg>
+
+  <div class="hero-viewport" aria-hidden="true">
+    <div class="hero-canvas" id="heroCanvas">
+      <div class="hero-layer hero-layer--1" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=1400&amp;q=80')"></div>
+      <div class="hero-layer hero-layer--2" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1400&amp;q=80')"></div>
+      <div class="hero-layer hero-layer--3" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&amp;fit=crop&amp;w=1400&amp;q=80')"></div>
+      <div class="hero-contours"></div>
+    </div>
+  </div>
+
+  <div class="hero-grain-local" style="filter:url(#heroGrain)" aria-hidden="true"></div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <div class="hero-interface">
+    <div class="hero-interface-top reveal">
+      <span class="hero-tag">AERIE ESTATES — PRIVATE COLLECTION, EST. 2009</span>
+      <span class="hero-coordblock">
+        <span>41.7658° N — ASPEN, CO</span>
+        <span>ELEV. 8,200 FT</span>
+      </span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line reveal">WHERE ALTITUDE</span>
+      <span class="line hero-title-italic reveal">meets address<span class="hero-dot">.</span></span>
+    </h1>
+
+    <div class="hero-interface-bottom">
+      <p class="hero-copy reveal">A discreet brokerage for residences that exist above the ordinary market — chosen for view, provenance, and privacy in equal measure.</p>
+      <div class="hero-actions reveal">
+        <a href="#collection" class="cta-clip">View the Collection</a>
+        <a href="#philosophy" class="btn btn-ghost">Our Philosophy</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to collection">
+    <span>Descend</span>
+    <div class="scroll-line"><i></i></div>
+  </button>
+</section>
+
+<!-- STAT MARQUEE -->
+<section class="marquee-strip" aria-label="Firm figures">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>LOT 214M — AVERAGE CLOSE PRICE</span>
+      <span class="dash">—</span>
+      <span>41 EXCLUSIVE ADDRESSES ON RECORD</span>
+      <span class="dash">—</span>
+      <span>7 COUNTRIES, ONE LEDGER</span>
+      <span class="dash">—</span>
+      <span>16 YEARS OF DISCRETION</span>
+      <span class="dash">—</span>
+    </div>
+    <div class="marquee-group" aria-hidden="true">
+      <span>LOT 214M — AVERAGE CLOSE PRICE</span>
+      <span class="dash">—</span>
+      <span>41 EXCLUSIVE ADDRESSES ON RECORD</span>
+      <span class="dash">—</span>
+      <span>7 COUNTRIES, ONE LEDGER</span>
+      <span class="dash">—</span>
+      <span>16 YEARS OF DISCRETION</span>
+      <span class="dash">—</span>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection" id="collection">
+  <div class="section-head">
+    <p class="eyebrow reveal">The Ledger</p>
+    <h2 class="section-title reveal">Four addresses, presently available.</h2>
+    <p class="section-copy reveal">Each entry below is drawn directly from our private ledger — not a public listing feed. Scroll to survey the collection.</p>
+  </div>
+
+  <div class="ledger-scroll" id="ledgerScroll">
+
+    <article class="lot-card reveal">
+      <div class="lot-image">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="The Vellum House — lakefront terrace and infinity pool">
+        <span class="lot-image-tag">LOT 01 — 46.4908° N, 6.9107° E</span>
+        <span class="lot-image-price">$38,400,000</span>
+      </div>
+      <div class="lot-body">
+        <h3>The Vellum House</h3>
+        <p class="lot-loc">Montreux, Switzerland</p>
+        <div class="lot-specs">
+          <span>6 BED</span><span>8 BATH</span><span>11,240 SQFT</span><span>LAKE VOSA VIEW</span>
+        </div>
+        <p class="lot-desc">A limestone residence terraced into the vineyard slope, its glass hall opening entirely onto the water. Sold once in forty years.</p>
+        <div class="lot-foot">
+          <a href="#contact" class="lot-link">Enquire →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="lot-card reveal">
+      <div class="lot-image">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Casa Meridian — mid-century modern exterior at dusk">
+        <span class="lot-image-tag">LOT 02 — 34.0736° N, 118.4004° W</span>
+        <span class="lot-image-price">$61,750,000</span>
+      </div>
+      <div class="lot-body">
+        <h3>Casa Meridian</h3>
+        <p class="lot-loc">Bel Air, California</p>
+        <div class="lot-specs">
+          <span>7 BED</span><span>9 BATH</span><span>14,800 SQFT</span><span>CITY-TO-SEA VIEW</span>
+        </div>
+        <p class="lot-desc">A 1962 mid-century restoration by the original architect's grandson, holding its cantilevered pool exactly as drawn.</p>
+        <div class="lot-foot">
+          <a href="#contact" class="lot-link">Enquire →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="lot-card reveal">
+      <div class="lot-image">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80" alt="Aerie Point Penthouse — interior staircase and skyline view">
+        <span class="lot-image-tag">LOT 03 — 25.7617° N, 80.1918° W</span>
+        <span class="lot-image-price">$29,900,000</span>
+      </div>
+      <div class="lot-body">
+        <h3>Aerie Point Penthouse</h3>
+        <p class="lot-loc">Miami, Florida</p>
+        <div class="lot-specs">
+          <span>5 BED</span><span>6.5 BATH</span><span>9,120 SQFT</span><span>FULL BAY WRAP</span>
+        </div>
+        <p class="lot-desc">The building's crown residence — three private elevators, a 360° wraparound terrace, and a bay that never repeats itself twice.</p>
+        <div class="lot-foot">
+          <a href="#contact" class="lot-link">Enquire →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="lot-card reveal">
+      <div class="lot-image">
+        <img src="https://images.unsplash.com/photo-1580216643062-cf460548a66a?auto=format&fit=crop&w=900&q=80" alt="Palazzo dell'Alba — grand canal-front facade">
+        <span class="lot-image-tag">LOT 04 — 45.4408° N, 12.3155° E</span>
+        <span class="lot-image-price">$74,200,000</span>
+      </div>
+      <div class="lot-body">
+        <h3>Palazzo dell'Alba</h3>
+        <p class="lot-loc">Venice, Italy</p>
+        <div class="lot-specs">
+          <span>8 BED</span><span>10 BATH</span><span>16,500 SQFT</span><span>GRAND CANAL FRONT</span>
+        </div>
+        <p class="lot-desc">A 15th-century palazzo with its frescoes intact, its water gate original, and its neighbors sworn to a very old silence.</p>
+        <div class="lot-foot">
+          <a href="#contact" class="lot-link">Enquire →</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="ledger-progress" aria-hidden="true">
+    <div class="ledger-progress-bar" id="ledgerProgressBar"></div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy" id="philosophy">
+  <div class="philosophy-grid">
+    <div class="philosophy-media reveal">
+      <div class="philosophy-image">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=900&q=80" alt="Curated interior detail of a private residence">
+      </div>
+      <div class="philosophy-frame" aria-hidden="true"></div>
+    </div>
+    <div class="philosophy-copy">
+      <p class="eyebrow reveal">Philosophy</p>
+      <h2 class="section-title reveal">We do not list houses. We keep a ledger of consequence.</h2>
+      <p class="philosophy-lead reveal">Aerie was founded on a single conviction: that the finest properties are never found by searching — they are introduced, quietly, by someone who already knows both parties.</p>
+      <div class="philosophy-points">
+        <div class="philosophy-point reveal">
+          <span class="point-mark">I</span>
+          <div>
+            <h4>Provenance over price</h4>
+            <p>Every address we represent has a history worth telling — and buyers who want to hear it.</p>
+          </div>
+        </div>
+        <div class="philosophy-point reveal">
+          <span class="point-mark">II</span>
+          <div>
+            <h4>Discretion as architecture</h4>
+            <p>No public listing, no signage, no open house. Access is arranged, never advertised.</p>
+          </div>
+        </div>
+        <div class="philosophy-point reveal">
+          <span class="point-mark">III</span>
+          <div>
+            <h4>One point of contact</h4>
+            <p>A single principal broker carries each relationship from introduction to close.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#services" class="text-link reveal">See how we work <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow reveal">What We Arrange</p>
+    <h2 class="section-title reveal">Three disciplines. One ledger.</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-coord">§ 01</span>
+      <h3>Private Sale &amp; Acquisition</h3>
+      <p>Off-market representation for sellers who will not tolerate a sign on the lawn, and buyers who will not tolerate a bidding war.</p>
+      <ul class="service-list">
+        <li>Confidential valuation</li>
+        <li>Curated buyer introduction</li>
+        <li>Closing coordination, worldwide</li>
+      </ul>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-coord">§ 02</span>
+      <h3>Estate Curation</h3>
+      <p>Preparing a residence for its next chapter — from restoration counsel to the quiet staging of a house that already knows how to hold a room.</p>
+      <ul class="service-list">
+        <li>Architectural &amp; heritage review</li>
+        <li>Interior &amp; grounds curation</li>
+        <li>Photographic &amp; archival record</li>
+      </ul>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-coord">§ 03</span>
+      <h3>Global Concierge</h3>
+      <p>For clients whose lives span continents — relocation, staffing, and the small, unglamorous logistics that make a second home feel like the first.</p>
+      <ul class="service-list">
+        <li>Relocation &amp; residency counsel</li>
+        <li>Household staffing introductions</li>
+        <li>Ongoing estate management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <p class="eyebrow reveal light">In Their Regard</p>
+    <h2 class="section-title reveal">Trusted by those who value discretion.</h2>
+    <p class="section-copy reveal">Words from clients whose names never appeared on a listing.</p>
+  </div>
+
+  <div class="marquee-wrap reveal">
+    <div class="marquee-fade marquee-fade--left" aria-hidden="true"></div>
+    <div class="marquee-fade marquee-fade--right" aria-hidden="true"></div>
+
+    <div class="testimonial-track">
+      <div class="testimonial-group">
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Eleanor Voss</h4>
+              <span>Acquisition, Lisbon</span>
+            </div>
+          </div>
+          <p>"They found us a house we didn't know existed, in a city we hadn't considered, and were right about both."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Julian Ashworth</h4>
+              <span>Private Sale, Aspen</span>
+            </div>
+          </div>
+          <p>"We sold without a single stranger walking through our home. That alone was worth their fee twice over."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Marguerite Sato</h4>
+              <span>Estate Curation, Como</span>
+            </div>
+          </div>
+          <p>"Aerie treated our estate like a piece of family history, not inventory. The buyer they found understood that too."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Desmond Cole</h4>
+              <span>Global Concierge</span>
+            </div>
+          </div>
+          <p>"One phone call, one broker, three continents. I never once had to explain myself twice."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Priya Nandakumar</h4>
+              <span>Acquisition, Geneva</span>
+            </div>
+          </div>
+          <p>"Discretion isn't a policy for them, it's a habit. Nothing about our search ever became a conversation elsewhere."</p>
+        </article>
+      </div>
+      <div class="testimonial-group" aria-hidden="true">
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Eleanor Voss</h4>
+              <span>Acquisition, Lisbon</span>
+            </div>
+          </div>
+          <p>"They found us a house we didn't know existed, in a city we hadn't considered, and were right about both."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Julian Ashworth</h4>
+              <span>Private Sale, Aspen</span>
+            </div>
+          </div>
+          <p>"We sold without a single stranger walking through our home. That alone was worth their fee twice over."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Marguerite Sato</h4>
+              <span>Estate Curation, Como</span>
+            </div>
+          </div>
+          <p>"Aerie treated our estate like a piece of family history, not inventory. The buyer they found understood that too."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Desmond Cole</h4>
+              <span>Global Concierge</span>
+            </div>
+          </div>
+          <p>"One phone call, one broker, three continents. I never once had to explain myself twice."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-head">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" alt="">
+            <div>
+              <h4>Priya Nandakumar</h4>
+              <span>Acquisition, Geneva</span>
+            </div>
+          </div>
+          <p>"Discretion isn't a policy for them, it's a habit. Nothing about our search ever became a conversation elsewhere."</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow reveal">Private Access</p>
+      <h2 class="section-title reveal">The ledger is not public. An introduction is.</h2>
+      <p class="section-copy reveal">Share a few details in confidence, and a principal broker will respond directly — typically within one business day.</p>
+      <div class="contact-detail reveal">
+        <span class="contact-label">Direct Line</span>
+        <span>+1 (307) 555-0142</span>
+      </div>
+      <div class="contact-detail reveal">
+        <span class="contact-label">Correspondence</span>
+        <span>principal@aerieestates.example</span>
+      </div>
+      <div class="contact-detail reveal">
+        <span class="contact-label">Offices</span>
+        <span>Aspen · Geneva · Singapore</span>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="fname">Full name</label>
+          <input type="text" id="fname" name="fname" required autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="femail" required autocomplete="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="finterest">Interest</label>
+          <select id="finterest" name="finterest">
+            <option value="acquire">Acquiring a residence</option>
+            <option value="sell">Selling privately</option>
+            <option value="curate">Estate curation</option>
+            <option value="concierge">Global concierge</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="fbudget">Indicative range</label>
+          <select id="fbudget" name="fbudget">
+            <option value="10-25">$10M – $25M</option>
+            <option value="25-50">$25M – $50M</option>
+            <option value="50-100">$50M – $100M</option>
+            <option value="100+">$100M+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="fmessage">A little about what you're seeking</label>
+        <textarea id="fmessage" name="fmessage" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">
+        <span class="btn-text">Request Introduction</span>
+        <span class="btn-sent">Received — we'll be in touch ✓</span>
+      </button>
+      <p class="form-fine">Every enquiry is handled in confidence and never shared beyond our principal brokers.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-mark">AERIE</span>
+      <span class="logo-sub">ESTATES</span>
+      <p>A private collection of the world's most consequential addresses.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#collection">Collection</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Access</a>
+      </div>
+      <div class="footer-col">
+        <h5>Offices</h5>
+        <span>39.1911° N, 106.8175° W — Aspen</span>
+        <span>46.2044° N, 6.1432° E — Geneva</span>
+        <span>1.3521° N, 103.8198° E — Singapore</span>
+      </div>
+      <div class="footer-col">
+        <h5>Correspondence</h5>
+        <span>principal@aerieestates.example</span>
+        <span>+1 (307) 555-0142</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Aerie Estates. All rights reserved.</span>
+    <span>Ledger entries maintained in confidence.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
