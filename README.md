@@ -18,6 +18,9 @@ The centerpiece of the website is a dynamic 3D parallax hero section that create
 * Optimized front-end performance
 * Modular and maintainable code structure
 
+  <img width="929" height="425" alt="image" src="https://github.com/user-attachments/assets/13767cef-7a7e-47e2-9325-8d881b023f1b" />
+
+
 ## Technologies Used
 
 * HTML5
